@@ -7,5 +7,11 @@ import org.springframework.boot.runApplication
 class OrmapperApplication
 
 fun main(args: Array<String>) {
-	runApplication<OrmapperApplication>(*args)
+    runApplication<OrmapperApplication>(*args)
+
+    selectByPK()
+    selectWhere()
+    count()
+    insert()
+    insertList()
 }
