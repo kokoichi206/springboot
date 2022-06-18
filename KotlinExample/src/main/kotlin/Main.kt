@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main(args: Array<String>) {
     println("Hello World!")
 
@@ -10,6 +12,14 @@ fun main(args: Array<String>) {
     val lessThan = Num(5) < Num(1)
     println(greaterThan)
     println(lessThan)
+
+    // "Call Java class" is way too easy.
+    val hello = HelloByJava()
+    hello.printHello()
+
+    // call Java Library
+    val uuid: UUID = UUID.randomUUID()
+    println(uuid.toString())
 }
 
 data class Num(val value: Int) {

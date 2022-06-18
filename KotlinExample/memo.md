@@ -124,3 +124,11 @@ class AddCalculationExecutorDelegate(
 - chunked !
 - reduce
 
+### Java との相互作用
+- SAM (Single Abstract Method)
+  - １つのメソッドだけが定義されたインターフェース
+  - Java 側の話
+- companion object
+  - クラス内に static な変数や関数を定義するとき
+  - Kotlin 独自機能であり、Java から呼び出すときは注意が必要
+
