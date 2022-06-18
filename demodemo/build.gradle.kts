@@ -1,8 +1,12 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+	// Run application by Gradle
 	id("org.springframework.boot") version "2.7.0"
+	// Manage dependencies
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
+	// Kotlin DSL 独自の書き方。
+	// id("org.jetbrains.kotlin.jvm") version "1.6.21" と一緒の意味。
 	kotlin("jvm") version "1.6.21"
 	kotlin("plugin.spring") version "1.6.21"
 }
