@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD
+  MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <!-- これ設定せなあかんの？めんどくさすぎん？ -->
+    <classPathEntry
+            location="/Users/kokoichi/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.29/16bfffda393ac4fe56f0985f1f035b37d3fc48f/mysql-connector-java-8.0.29.jar"/>
+    <!--    Kotlin として MyBatis を使う！-->
+    <context id="MySQLTables" targetRuntime="MyBatis3Kotlin">
+        <plugin type="org.mybatis.generator.plugins.MapperAnnotationPlugin"/>
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+        <!--        コード生成したい DB の情報-->
+        <jdbcConnection
+                driverClass="com.mysql.jdbc.Driver"
+                connectionURL="jdbc:mysql://127.0.0.1:3306/example?enabledTLSProtocols=TLSv1.2"
+                userId="root"
+                password="mysql">
+            <property name="nullCatalogMeansCurrent" value="true"/>
+        </jdbcConnection>
+        <javaModelGenerator
+                targetPackage="database"
+                targetProject="src/main/kotlin">
+        </javaModelGenerator>
+        <javaClientGenerator
+                targetPackage="database"
+                targetProject="src/main/kotlin">
+        </javaClientGenerator>
+        <!--        対象テーブル名-->
+        <table tableName="user"/>
+        <!--        <table tableName="%"/>-->
+    </context>
+</generatorConfiguration>
