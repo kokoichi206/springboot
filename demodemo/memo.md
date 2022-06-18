@@ -19,6 +19,9 @@
   - 実装クラスには `@Component` アノテーションが付く
     - DI の対象であることを表す
 - DI の方法には色々あるが、基本的にはコンストラクタインジェクションを使う
+- 設定を定義するのに Properties, YAML のどちらの形式でも可能
+    - 現在は YAML を使用することが多い
+    - `application.yml` を作成し、デフォルトの `application.properties` を消す
 
 ### Commands
 ``` sh
