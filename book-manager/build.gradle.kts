@@ -52,5 +52,5 @@ mybatisGenerator {
 detekt {
     input = files(".")
     autoCorrect = true
-    config = files("./config/detekt/detekt.yml")
+    config = files("$projectDir/config/detekt/detekt.yml")
 }
