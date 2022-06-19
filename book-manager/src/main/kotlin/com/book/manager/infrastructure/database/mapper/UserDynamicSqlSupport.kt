@@ -4,8 +4,8 @@
 package com.book.manager.infrastructure.database.mapper
 
 import com.book.manager.domain.enum.RoleType
-import java.sql.JDBCType
 import org.mybatis.dynamic.sql.SqlTable
+import java.sql.JDBCType
 
 object UserDynamicSqlSupport {
     object User : SqlTable("user") {

@@ -38,6 +38,9 @@ INSERT INTO user values
 (1, 'admin@test.com', '$s$10$.zeaifejaojzdcizlejfa31/fasjelfjiajefa', '管理者', 'ADMIN'),
 (2, 'user@test.com', '$s$10$z.zeaifejaojzdcizlejfa/fa3942081iajefa', '管理者', 'ADMIN');
 
-
 ```
+
+### memo
+- Repository はデザインパターンの一種
+  - データベース操作のロジックを抽象化する
 

@@ -3,9 +3,9 @@
  */
 package com.book.manager.infrastructure.database.mapper
 
+import org.mybatis.dynamic.sql.SqlTable
 import java.sql.JDBCType
 import java.time.LocalDate
-import org.mybatis.dynamic.sql.SqlTable
 
 object BookDynamicSqlSupport {
     object Book : SqlTable("book") {
