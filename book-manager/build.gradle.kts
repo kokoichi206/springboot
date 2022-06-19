@@ -7,6 +7,7 @@ plugins {
 	kotlin("plugin.spring") version "1.6.21"
 
 	id("com.arenagod.gradle.MybatisGenerator") version "1.4"
+    id("io.gitlab.arturbosch.detekt") version "1.16.0"
 }
 
 group = "com.book.manager"
@@ -15,6 +16,7 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
+	jcenter()
 }
 
 dependencies {
@@ -27,6 +29,8 @@ dependencies {
 	implementation("mysql:mysql-connector-java:8.0.23")
 	mybatisGenerator("org.mybatis.generator:mybatis-generator-core:1.4.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.16.0")
 }
 
 tasks.withType<KotlinCompile> {
@@ -42,5 +46,10 @@ tasks.withType<Test> {
 
 mybatisGenerator {
 	verbose = true
-	configFile = "${projectDir}/src/main/resources/generatorConfig.xml"
+	configFile = "$projectDir/src/main/resources/generatorConfig.xml"
+}
+
+detekt {
+	input = files(".")
+	autoCorrect = true
 }
