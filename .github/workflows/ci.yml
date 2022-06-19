@@ -16,9 +16,10 @@ jobs:
           java-version: '11'
 
       - name: Run Detekt Lint
-        run: make detect
+        run: |
+          cd book-manager && ./gradlew detekt
 
       - name: Check whether if error found
         run: |
           cat book-manager/build/reports/detekt/detekt.txt |\
-           wc -l | awk '$0 == 0{exit 1}'
+           wc -l | awk '$0 != 0 {exit 1}'
