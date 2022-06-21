@@ -1,4 +1,5 @@
 ## commands
+
 ``` sh
 mysql -h 127.0.0.1 --port 3306 -uroot -pmysql
 
@@ -32,7 +33,7 @@ CREATE TABLE rental (
 
 INSERT INTO book values
 (100, 'Kotlin入門', 'ことりん太郎', '1999-11-30'),
-(100, 'Java入門', 'じゃヴァ太郎', '1909-03-30');
+(101, 'Java入門', 'じゃヴァ太郎', '1909-03-30');
 
 INSERT INTO user values
 (1, 'admin@test.com', '$s$10$.zeaifejaojzdcizlejfa31/fasjelfjiajefa', '管理者', 'ADMIN'),
@@ -40,7 +41,31 @@ INSERT INTO user values
 
 ```
 
-### memo
-- Repository はデザインパターンの一種
-  - データベース操作のロジックを抽象化する
+### Spring Security
 
+- Spring プロジェクトの１つ
+- Web アプリケーションで認証、認可などセキュリティ関連の機能を実現するためのフレームワーク
+
+### memo
+
+- Repository はデザインパターンの一種
+    - データベース操作のロジックを抽象化する
+- 今回 DB 層しか Interface に依存させてない
+    - 本来は controller, service, もやるべき？
+    - Android 前やったときは Interface にしてなかった
+    - あんまり変更が入らないところだから？
+
+### curl
+
+``` sh
+curl -i -c cookie.txt -H 'Content-Type:application/x-www-form-urlencoded' -X POST -d 'email=use' -d 'pass=ho' http://localhost:8080/login
+
+curl -i -b cookie.txt http://localhost:8080/book/list
+```
+
+### Redis
+
+- spring-session-data-redis:
+    - セッション情報を Redis に保持する実装のために必要
+- jedis:
+    - Redis へアクセスするための Java ライブラリ

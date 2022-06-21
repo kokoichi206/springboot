@@ -29,6 +29,12 @@ dependencies {
     implementation("mysql:mysql-connector-java:8.0.23")
     mybatisGenerator("org.mybatis.generator:mybatis-generator-core:1.4.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.springframework.boot:spring-boot-starter-security")
+
+    implementation("org.springframework.session:spring-session-data-redis")
+    implementation("redis.clients:jedis")
+
+    implementation("org.springframework.boot:spring-boot-starter-aop")
 
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.16.0")
 }
