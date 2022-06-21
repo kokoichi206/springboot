@@ -1,5 +1,6 @@
 package com.book.manager.presentation.config
 
+import com.book.manager.application.service.AuthenticationService
 import com.book.manager.domain.enum.RoleType
 import com.book.manager.presentation.handler.BookManagerAccessDeniedHandler
 import com.book.manager.presentation.handler.BookManagerAuthenticationEntryPoint

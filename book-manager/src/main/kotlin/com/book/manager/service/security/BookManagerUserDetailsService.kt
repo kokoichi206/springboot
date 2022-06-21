@@ -1,5 +1,7 @@
 package com.book.manager.service.security
 
+import com.book.manager.application.service.AuthenticationService
+import com.book.manager.domain.enum.RoleType
 import com.book.manager.domain.model.User
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.authority.AuthorityUtils
@@ -11,7 +13,7 @@ class BookManagerUserDetailsService(
 ) : UserDetailsService {
     override fun loadUserByUsername(username: String): UserDetails? {
         val user = authenticationService.findUser(username)
-        return user.let { BookManagerUserDetails(user) }
+        return user?.let { BookManagerUserDetails(user) }
     }
 }
 
