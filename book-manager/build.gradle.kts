@@ -31,6 +31,9 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("org.springframework.boot:spring-boot-starter-security")
 
+    implementation("org.springframework.session:spring-session-data-redis")
+    implementation("redis.clients:jedis")
+
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.16.0")
 }
 

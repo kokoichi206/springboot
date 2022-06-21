@@ -63,3 +63,9 @@ curl -i -c cookie.txt -H 'Content-Type:application/x-www-form-urlencoded' -X POS
 curl -i -b cookie.txt http://localhost:8080/book/list
 ```
 
+### Redis
+
+- spring-session-data-redis:
+    - セッション情報を Redis に保持する実装のために必要
+- jedis:
+    - Redis へアクセスするための Java ライブラリ
