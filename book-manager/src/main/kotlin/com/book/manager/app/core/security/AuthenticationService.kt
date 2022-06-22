@@ -1,4 +1,4 @@
-package com.book.manager.application.service
+package com.book.manager.app.core.security
 
 import com.book.manager.domain.model.User
 import com.book.manager.domain.repository.UserRepository

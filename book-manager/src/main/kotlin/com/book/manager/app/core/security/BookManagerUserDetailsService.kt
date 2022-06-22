@@ -1,6 +1,5 @@
-package com.book.manager.service.security
+package com.book.manager.app.core.security
 
-import com.book.manager.application.service.AuthenticationService
 import com.book.manager.domain.enum.RoleType
 import com.book.manager.domain.model.User
 import org.springframework.security.core.GrantedAuthority

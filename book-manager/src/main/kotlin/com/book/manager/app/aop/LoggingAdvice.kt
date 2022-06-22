@@ -1,6 +1,6 @@
-package com.book.manager.presentation.aop
+package com.book.manager.app.aop
 
-import com.book.manager.service.security.BookManagerUserDetails
+import com.book.manager.app.core.security.BookManagerUserDetails
 import org.aspectj.lang.JoinPoint
 import org.aspectj.lang.ProceedingJoinPoint
 import org.aspectj.lang.annotation.After
