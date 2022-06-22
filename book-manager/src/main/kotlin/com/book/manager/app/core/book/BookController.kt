@@ -1,9 +1,8 @@
-package com.book.manager.presentation.controller
+package com.book.manager.app.core.book
 
 import com.book.manager.presentation.BookInfo
 import com.book.manager.presentation.GetBookDetailResponse
 import com.book.manager.presentation.GetBookListResponse
-import com.book.manager.service.BookService
 import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping

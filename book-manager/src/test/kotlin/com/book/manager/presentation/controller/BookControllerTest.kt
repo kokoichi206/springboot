@@ -1,16 +1,16 @@
 package com.book.manager.presentation.controller
 
+import com.book.manager.app.core.book.BookController
 import com.book.manager.domain.model.Book
 import com.book.manager.domain.model.BookWithRental
 import com.book.manager.presentation.BookInfo
 import com.book.manager.presentation.GetBookListResponse
-import com.book.manager.service.BookService
+import com.book.manager.app.core.book.BookService
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions
-import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status

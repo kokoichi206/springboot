@@ -1,4 +1,4 @@
-package com.book.manager.presentation.handler
+package com.book.manager.app.core.security.handler
 
 import org.springframework.security.core.Authentication
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler

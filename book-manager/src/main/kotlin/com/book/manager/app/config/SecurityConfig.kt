@@ -1,12 +1,12 @@
-package com.book.manager.presentation.config
+package com.book.manager.app.config
 
-import com.book.manager.application.service.AuthenticationService
+import com.book.manager.app.core.security.AuthenticationService
 import com.book.manager.domain.enum.RoleType
-import com.book.manager.presentation.handler.BookManagerAccessDeniedHandler
-import com.book.manager.presentation.handler.BookManagerAuthenticationEntryPoint
-import com.book.manager.presentation.handler.BookManagerAuthenticationFailureHandler
-import com.book.manager.presentation.handler.BookManagerAuthenticationSuccessHandler
-import com.book.manager.service.security.BookManagerUserDetailsService
+import com.book.manager.app.core.security.handler.BookManagerAccessDeniedHandler
+import com.book.manager.app.core.security.handler.BookManagerAuthenticationEntryPoint
+import com.book.manager.app.core.security.handler.BookManagerAuthenticationFailureHandler
+import com.book.manager.app.core.security.handler.BookManagerAuthenticationSuccessHandler
+import com.book.manager.app.core.security.BookManagerUserDetailsService
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity

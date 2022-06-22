@@ -1,4 +1,4 @@
-package com.book.manager.service
+package com.book.manager.app.core.adminbook
 
 import com.book.manager.domain.model.Book
 import com.book.manager.domain.repository.BookRepository

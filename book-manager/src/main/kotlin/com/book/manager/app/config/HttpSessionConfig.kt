@@ -1,4 +1,4 @@
-package com.book.manager.presentation.config
+package com.book.manager.app.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory

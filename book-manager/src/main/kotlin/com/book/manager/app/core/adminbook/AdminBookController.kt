@@ -1,9 +1,8 @@
-package com.book.manager.presentation.controller
+package com.book.manager.app.core.adminbook
 
 import com.book.manager.domain.model.Book
 import com.book.manager.presentation.RegisterBookRequest
 import com.book.manager.presentation.UpdateBookRequest
-import com.book.manager.service.AdminBookService
 import org.springframework.web.bind.annotation.*
 
 @RestController
